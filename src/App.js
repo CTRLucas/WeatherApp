@@ -1,10 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import DailyForecast from "./DailyForecast";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-    <h1> App </h1>
+      <DailyForecast day="Monday" />
     </div>
   );
 }
