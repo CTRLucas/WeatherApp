@@ -25,7 +25,7 @@ class WeekForeCast extends React.Component {
       .then((result) => {
         const weatherInfo = result.daily.map((element) => {
           var d = new Date(element.dt * 1000);
-          console.log(d.toString().split(" ")[0]);
+
           return {
             date: d,
             temperature: Math.round((element.temp.day - 273.15) * 10) / 10,
@@ -42,10 +42,8 @@ class WeekForeCast extends React.Component {
         <Grid container spacing={2}>
           <Grid item xs={12}></Grid>
           <Grid container justify="center" spacing={5}>
-            {console.log(this.state.days)}
             {this.state.weatherInfo.map((value, index) => (
               <Grid key={index} item>
-                {console.log("test")}
                 <Card>
                   <CardActionArea
                     component={Link}

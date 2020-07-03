@@ -1,6 +1,24 @@
 .ListStyling {
-	 margin: auto;
-  	width: 50%;
-  	border: 3px solid green;
-  	padding: 10px;
+  margin: auto;
+  width: 50%;
+  border: 2px solid skyblue;
+  padding: 20px;
+  background-color: rgba(139, 204, 248, 0.192);
+}
+
+.header {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.items {
+  background-color: rgba(139, 204, 248, 0.192);
+  margin: 10px;
+  border: 1px solid lightblue;
+  margin: 3px;
+}
+
+body {
+  background-color: lavender;
 }
