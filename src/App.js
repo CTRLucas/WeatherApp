@@ -9,7 +9,7 @@ function App() {
       <Router>
         <Switch>
           <Route path="/" exact component={WeekForecast} />
-          <Route path="/hourly/:date" component={DailyForecast} />
+          <Route path="/daily/:date" component={DailyForecast} />
         </Switch>
       </Router>
     </div>

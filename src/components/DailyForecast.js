@@ -56,6 +56,7 @@ class DailyForecast extends React.Component {
   }
 
   componentDidMount() {
+    console.log(this.props);
     fetch(
       "http://api.openweathermap.org/data/2.5/forecast?q=stockholm&appid=" +
         process.env.REACT_APP_WEATHER_API_KEY

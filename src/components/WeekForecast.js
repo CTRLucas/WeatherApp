@@ -32,9 +32,7 @@ class WeekForeCast extends React.Component {
           };
         });
         weatherInfo.pop();
-        console.log(weatherInfo);
         this.setState({ weatherInfo });
-        console.log(this.state.weatherInfo);
       });
   }
   render() {
@@ -49,7 +47,13 @@ class WeekForeCast extends React.Component {
               <Grid key={index} item>
                 {console.log("test")}
                 <Card>
-                  <CardActionArea component={Link} to={`hourly/${value.date}`}>
+                  <CardActionArea
+                    component={Link}
+                    to={{
+                      pathname: `daily/${value.date}`,
+                      state: { date: value.date },
+                    }}
+                  >
                     <CardContent>
                       <Typography>
                         {value.date.toString().split(" ")[0]}
